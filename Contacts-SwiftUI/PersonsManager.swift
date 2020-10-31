@@ -7,6 +7,13 @@
 
 import Foundation
 
+struct Person: Hashable {
+    var firstName = ""
+    var lastName = ""
+    var phone = ""
+    var email = ""
+}
+
 final class PersonsManager {
     let firstNames = ["Paul", "Denis", "Boris", "Nicola", "Bred", "Teo"].shuffled()
     let lastNames = ["Cooper", "Jordan", "Gibson", "Lopez", "King", "Harrison"].shuffled()
@@ -27,12 +34,3 @@ final class PersonsManager {
         return persons
     }
 }
-
-struct Person: Hashable {
-    var firstName = ""
-    var lastName = ""
-    var phone = ""
-    var email = ""
-}
-
-
