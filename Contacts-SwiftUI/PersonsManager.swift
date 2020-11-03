@@ -12,6 +12,10 @@ struct Person: Hashable {
     var lastName = ""
     var phone = ""
     var email = ""
+    
+    var fullName: String {
+        "\(firstName) \(lastName)"
+    }
 }
 
 final class PersonsManager {

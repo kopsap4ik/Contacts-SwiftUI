@@ -16,7 +16,7 @@ struct DetailedList: View {
             
             List{
                 ForEach(persons, id: \.self) { person in
-                    Section(header: Text("\(person.firstName) \(person.lastName)")
+                    Section(header: Text(person.fullName)
                                 .font(Font.title2.weight(.heavy))
                                 .foregroundColor(.blue)
                                 .frame(maxWidth: .infinity, alignment: .center)

@@ -15,12 +15,12 @@ struct NamesList: View {
         NavigationView {
             List(persons, id: \.self) { person in
                 NavigationLink(destination: PersonView(person: person)) {
-                    Text("\(person.firstName) \(person.lastName)")
+                    Text(person.fullName)
                         .font(.title2)
                         .padding()
                 }
             }
-            .navigationBarTitle(Text("Друзья"))
+            .navigationBarTitle("Друзья")
         }
     }
 }

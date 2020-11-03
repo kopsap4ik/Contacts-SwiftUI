@@ -22,7 +22,7 @@ struct PersonView: View {
         }
         .font(.title2)
         .padding()
-        .navigationBarTitle(Text("\(person.firstName) \(person.lastName)"))
+        .navigationBarTitle(person.fullName)
     }
 }
 
